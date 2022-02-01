@@ -18,4 +18,4 @@ test:
 stop:
     stage: stop
     script:
-        - allurectl job-run stop
+        - ./allurectl job-run stop
