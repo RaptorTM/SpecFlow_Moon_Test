@@ -1,0 +1,64 @@
+{
+  "uuid": "23bb97025f2245d5a9200c521a272666",
+  "historyId": "TestScenario",
+  "fullName": "TestScenario",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-H0VPP8Q"
+    },
+    {
+      "name": "feature",
+      "value": "Calculator"
+    }
+  ],
+  "links": [],
+  "name": "TestScenario",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  input is \"Hello\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643718737155,
+      "stop": 1643718737156
+    },
+    {
+      "name": "Then  answer is \"World\"",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643718737156,
+      "stop": 1643718737160
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1643718737155,
+  "stop": 1643718737161
+}

@@ -13,6 +13,7 @@ namespace SpecFlowAllure.Steps
         private int FirstNumber;
         private int SecondtNumber;
         private int Result;
+        private string Str;
 
         public CalculatorStepDefinitions(ScenarioContext scenarioContext)
         {
@@ -59,9 +60,31 @@ namespace SpecFlowAllure.Steps
         {
             //TODO: implement assert (verification) logic
 
-            Result.Should().Be(result);
+            result.Should().Be(Result);
 
             //_scenarioContext.Pending();
+        }
+
+        [Given(@"input is ""(.*)""")]
+        public void GivenInputIs(string input_str)
+        {
+            Str = input_str;
+        }
+
+        [Then(@"answer is ""(.*)""")]
+        public void ThenAnswerIs(string answer_str)
+        {
+            string world_str = "World";
+            answer_str.Should().Be(world_str);
+        }
+
+        [When("the two numbers are subtracted")]
+        public void WhenTheTwoNumbersAreSubtracted()
+        {
+            //TODO: implement act (action) logic
+
+            //_scenarioContext.Pending();
+            Result = FirstNumber - SecondtNumber;
         }
     }
 }
