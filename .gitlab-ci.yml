@@ -7,5 +7,8 @@
 image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
 test:
     stage: test
+    before_script:
+        - wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_386 -O ./allurectl
+        - chmod +x ./allurectl
     script:
-        - dotnet restore && dotnet test
+        - ./allurectl watch --results SpecFlowAllure\bin\Debug\net5.0\allure-results -- dotnet restore && dotnet test
