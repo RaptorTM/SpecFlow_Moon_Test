@@ -114,3 +114,8 @@ C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\obj\Debug\net5.
 C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\obj\Debug\net5.0\ref\SpecFlowAllure.dll
 C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\obj\Debug\net5.0\SpecFlowAllure.pdb
 C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\obj\Debug\net5.0\SpecFlowAllure.genruntimeconfig.cache
+C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\Allure.Commons.dll
+C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\CsvHelper.dll
+C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\MimeTypesMap.dll
+C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\Allure.SpecFlowPlugin.dll
+C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\specflow.json
