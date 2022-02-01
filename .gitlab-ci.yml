@@ -16,6 +16,6 @@ test:
         - wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_386 -O ./allurectl
         - chmod +x ./allurectl
     script:
-        - ./allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
-        - ./allurectl watch --results SpecFlowAllure/bin/Debug/net5.0/allure-results -- dotnet restore && dotnet test
+        - dotnet restore && dotnet test
+        - ./allurectl upload --launch-name "testUploadManual" SpecFlowAllure/bin/Debug/net5.0/allure-results
         - ls SpecFlowAllure/bin/Debug/net5.0/allure-results
