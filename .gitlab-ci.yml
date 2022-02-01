@@ -13,7 +13,6 @@ test:
         - wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_386 -O ./allurectl
         - chmod +x ./allurectl
     script:
-        - dotnet restore && dotnet test
         - ./allurectl job-run plan --output-file ./testplan.json
-        - ./allurectl watch 
+        - ./allurectl watch -- dotnet restore && dotnet test
     allow_failure: true
