@@ -9,7 +9,7 @@ variables:
     ALLURE_LAUNCH_NAME: "${CI_PROJECT_NAME} - ${CI_COMMIT_SHORT_SHA}" #mandatory
     ALLURE_LAUNCH_TAGS: "regular, ${CI_COMMIT_REF_NAME}" #mandatory
     ALLURE_TESTPLAN_PATH: "./testplan.json" #mandatory
-    ALLURE_RESULTS: "allure-results" #mandatory
+    ALLURE_RESULTS: "SpecFlowAllure/bin/Debug/net5.0/allure-results" #mandatory
 test:
     stage: test
     before_script:
