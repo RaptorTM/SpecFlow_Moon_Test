@@ -5,10 +5,13 @@
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
+variables:
+    ALLURE_RESULTS: "SpecFlowAllure/bin/Debug/net5.0/allure-results"
 test:
     stage: test
     before_script:
         - wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_386 -O ./allurectl
         - chmod +x ./allurectl
     script:
-        - ./allurectl watch --results SpecFlowAllure\bin\Debug\net5.0\allure-results -- dotnet restore && dotnet test
+        - ./allurectl job-run plan --output-file ./testplan.json
+        - ./allurectl watch -- dotnet restore && dotnet test
