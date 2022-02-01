@@ -5,6 +5,8 @@
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
+variables:
+    ALLURE_RESULTS: "SpecFlowAllure/bin/Debug/net5.0/allure-results"
 test:
     stage: test
     before_script:
