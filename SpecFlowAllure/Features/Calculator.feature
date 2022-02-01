@@ -10,11 +10,11 @@ Scenario: Add two numbers
 	Given the first number is 50
 	And the second number is 70
 	When the two numbers are added
-	Then the result should be 120
+	Then the result should be 126
 
 Scenario: TestScenario
 	Given input is "Hello"
-	Then answer is "World"
+	Then answer is "World2"
 
 Scenario: Subtract two numbers
 	Given the first number is 70
