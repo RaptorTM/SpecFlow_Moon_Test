@@ -19,4 +19,3 @@ test:
         - ./allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
         - ./allurectl watch --results SpecFlowAllure/bin/Debug/net5.0/allure-results -- dotnet restore && dotnet test
         - ls SpecFlowAllure/bin/Debug/net5.0/allure-results
-    allow_failure: true
