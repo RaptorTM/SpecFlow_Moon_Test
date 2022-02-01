@@ -4,9 +4,8 @@
 # Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
-image: mcr.microsoft.com/dotnet/sdk:6.0
-test:solution:
+image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
+test:
     stage: test
     script:
-        - dotnet restore SpecFlowAllure.sln
-        - dotnet test -c Release -v n SpecFlowAllure.sln
+        - dotnet restore && dotnet test
