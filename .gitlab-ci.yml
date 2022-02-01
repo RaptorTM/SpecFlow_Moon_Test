@@ -17,6 +17,6 @@ test:
         - chmod +x ./allurectl
     script:
         - ./allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
-        - ./allurectl watch -- dotnet restore && dotnet test
+        - ./allurectl watch --results SpecFlowAllure/bin/Debug/net5.0/allure-results -- dotnet restore && dotnet test
         - ls SpecFlowAllure/bin/Debug/net5.0/allure-results
     allow_failure: true
