@@ -1,0 +1,94 @@
+{
+  "uuid": "ce460aa03250481ea2cecabe5c28c393",
+  "historyId": "Subtract two numbers",
+  "fullName": "Subtract two numbers",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-H0VPP8Q"
+    },
+    {
+      "name": "feature",
+      "value": "Calculator"
+    }
+  ],
+  "links": [],
+  "name": "Subtract two numbers",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "Given  the first number is 70",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643718737153,
+      "stop": 1643718737153
+    },
+    {
+      "name": "And  the second number is 50",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643718737153,
+      "stop": 1643718737153
+    },
+    {
+      "name": "When  the two numbers are subtracted",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643718737153,
+      "stop": 1643718737153
+    },
+    {
+      "name": "Then  the result should be 20",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1643718737154,
+      "stop": 1643718737154
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1643718737152,
+  "stop": 1643718737154
+}
