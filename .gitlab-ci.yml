@@ -9,6 +9,7 @@ variables:
     ALLURE_RESULTS: "SpecFlowAllure/bin/Debug/net5.0/allure-results"
 test:
     stage: test
+    allow_failure: true
     before_script:
         - wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_386 -O ./allurectl
         - chmod +x ./allurectl
