@@ -21,9 +21,6 @@ namespace SpecFlowAllure.Steps
 
         public CalculatorStepDefinitions(ScenarioContext scenarioContext)
         {
-            //Environment.SetEnvironmentVariable(
-            //AllureConstants.ALLURE_CONFIG_ENV_VARIABLE,
-            //Path.Combine(Environment.CurrentDirectory, AllureConstants.CONFIG_FILENAME));
             
             _scenarioContext = scenarioContext;
 
@@ -37,7 +34,6 @@ namespace SpecFlowAllure.Steps
             // To use the multiline text or the table argument of the scenario,
             // additional string/Table parameters can be defined on the step definition
             // method. 
-
             //_scenarioContext.Pending();
             //Console.WriteLine(Environment.CurrentDirectory);
             FirstNumber = number;
