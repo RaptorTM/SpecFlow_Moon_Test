@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowAllure.Steps
@@ -20,7 +21,7 @@ namespace SpecFlowAllure.Steps
             _scenarioContext = scenarioContext;
         }
 
-        [Given("the first number is (.*)")]
+        [Given("первое число (.*)")]
         public void GivenTheFirstNumberIs(int number)
         {
             //TODO: implement arrange (precondition) logic
@@ -33,7 +34,7 @@ namespace SpecFlowAllure.Steps
             FirstNumber = number;
         }
 
-        [Given("the second number is (.*)")]
+        [Given("второе число (.*)")]
         public void GivenTheSecondNumberIs(int number)
         {
             //TODO: implement arrange (precondition) logic
@@ -46,7 +47,7 @@ namespace SpecFlowAllure.Steps
             SecondtNumber = number;
         }
 
-        [When("the two numbers are added")]
+        [When("два числа суммируются")]
         public void WhenTheTwoNumbersAreAdded()
         {
             //TODO: implement act (action) logic
@@ -55,7 +56,7 @@ namespace SpecFlowAllure.Steps
             Result = FirstNumber + SecondtNumber;
         }
 
-        [Then("the result should be (.*)")]
+        [Then("результат должен быть (.*)")]
         public void ThenTheResultShouldBe(int result)
         {
             //TODO: implement assert (verification) logic
@@ -65,26 +66,38 @@ namespace SpecFlowAllure.Steps
             //_scenarioContext.Pending();
         }
 
-        [Given(@"input is ""(.*)""")]
+        [Given(@"пользователь ввел ""(.*)""")]
         public void GivenInputIs(string input_str)
         {
             Str = input_str;
         }
 
-        [Then(@"answer is ""(.*)""")]
+        [Then(@"ответ ""(.*)""")]
         public void ThenAnswerIs(string answer_str)
         {
             string world_str = "World";
             answer_str.Should().Be(world_str);
         }
 
-        [When("the two numbers are subtracted")]
+        [When("два числа вычитаются")]
         public void WhenTheTwoNumbersAreSubtracted()
         {
             //TODO: implement act (action) logic
 
             //_scenarioContext.Pending();
             Result = FirstNumber - SecondtNumber;
+        }
+
+        [When("условие (.*)")]
+        public void WhenConditionIsTrue(bool cond)
+        {
+            Assert.IsTrue(cond);
+        }
+
+        [Then("объект работает")]
+        public void ObjectIsRunning()
+        {
+            Assert.IsTrue(true);
         }
     }
 }
