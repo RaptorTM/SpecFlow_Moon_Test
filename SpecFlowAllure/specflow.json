@@ -3,7 +3,7 @@
     "name": "en-us"
   },
   "language": {
-    "feature": "en-us"
+    "feature": "ru-Ru"
   },
   "stepAssemblies": [
     { "assembly": "Allure.SpecFlowPlugin" }
