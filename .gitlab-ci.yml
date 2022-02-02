@@ -19,4 +19,5 @@ test:
         - dotnet restore
         - ./allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
         - ./allurectl watch -- dotnet test
+        - cat ./testplan.json
     allow_failure: true
