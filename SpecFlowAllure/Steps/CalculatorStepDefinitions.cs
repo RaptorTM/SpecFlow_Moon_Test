@@ -1,5 +1,8 @@
-﻿using FluentAssertions;
+﻿using Allure.Commons;
+using FluentAssertions;
 using NUnit.Framework;
+using System;
+using System.IO;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowAllure.Steps
@@ -18,7 +21,12 @@ namespace SpecFlowAllure.Steps
 
         public CalculatorStepDefinitions(ScenarioContext scenarioContext)
         {
+            //Environment.SetEnvironmentVariable(
+            //AllureConstants.ALLURE_CONFIG_ENV_VARIABLE,
+            //Path.Combine(Environment.CurrentDirectory, AllureConstants.CONFIG_FILENAME));
+            
             _scenarioContext = scenarioContext;
+
         }
 
         [Given("первое число (.*)")]
@@ -31,6 +39,7 @@ namespace SpecFlowAllure.Steps
             // method. 
 
             //_scenarioContext.Pending();
+            //Console.WriteLine(Environment.CurrentDirectory);
             FirstNumber = number;
         }
 
