@@ -18,5 +18,5 @@ test:
     script:
         - dotnet restore
         - ./allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
-        - ./allurectl watch -- dotnet run
+        - ./allurectl watch -- dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
     allow_failure: true
