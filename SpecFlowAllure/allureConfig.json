@@ -1,6 +1,8 @@
 ﻿{
   "allure": {
     "directory": "allure-results",
+    "enableParameters": true,
+    "cleanResultDirectory": true,
     "links": [
       "{link}",
       "{issue}",
@@ -21,7 +23,8 @@
       },
       "behaviors": {
         "epic": "^epic:?(.+)",
-        "story": "^story:?(.+)"
+        "story": "^story:?(.+)",
+        "task": "^task:?(.+)"
       },
       "packages": {
         "package": "^package:?(.+)",
@@ -31,7 +34,8 @@
     },
     "labels": {
       "owner": "^owner:?(.+)",
-      "severity": "^(normal|blocker|critical|minor|trivial)"
+      "severity": "^(normal|blocker|critical|minor|trivial)",
+      "layer":  "^layer:?(.+)"
     },
     "links": {
       "issue": "^issue:(\\d+)",
