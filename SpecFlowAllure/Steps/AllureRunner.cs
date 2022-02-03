@@ -63,6 +63,7 @@ namespace SpecFlowAllure.Steps
 
             var options = new JsonSerializerOptions();
             options.PropertyNameCaseInsensitive = true;
+            Console.WriteLine($"testPlanJson: {testPlanJson} options: {options}");
             return JsonSerializer.Deserialize<TestPlan>(testPlanJson, options);
             //}
             //catch (Exception e)
@@ -87,7 +88,7 @@ namespace SpecFlowAllure.Steps
 
     public class TestCase
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Selector { get; set; }
     }
 }
