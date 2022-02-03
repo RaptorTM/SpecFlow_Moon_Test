@@ -24,7 +24,6 @@ namespace SpecFlowAllure.Steps
                 var filterService = engine.Services.GetService<ITestFilterService>();
                 var builder = filterService.GetTestFilterBuilder();
                 var testPlan = getTestPlan();
-                //Console.WriteLine(testPlan.Tests[0].Selector);
                 if (testPlan != null)
                 {
                     Console.WriteLine("Not empty");
@@ -57,20 +56,19 @@ namespace SpecFlowAllure.Steps
                 return null;
             }
 
-            //try
-            //{
-            var testPlanJson = File.ReadAllText(testPlanPath);
+            try
+            {
+                var testPlanJson = File.ReadAllText(testPlanPath);
 
-            var options = new JsonSerializerOptions();
-            options.PropertyNameCaseInsensitive = true;
-            Console.WriteLine($"testPlanJson: {testPlanJson} options: {options}");
-            return JsonSerializer.Deserialize<TestPlan>(testPlanJson, options);
-            //}
-            //catch (Exception e)
-            //{
-            //    return null;
-            //}
-        }
+                var options = new JsonSerializerOptions();
+                options.PropertyNameCaseInsensitive = true;
+                return JsonSerializer.Deserialize<TestPlan>(testPlanJson, options);
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+}
 
         public static string? getTestPlanPath()
         {
