@@ -1,0 +1,286 @@
+<test-run id="0" name="SpecFlowAllure.dll" fullname="C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\SpecFlowAllure.dll" runstate="Runnable" testcasecount="10" result="Failed" total="10" passed="6" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="12" engine-version="3.14.0.0" clr-version="5.0.12" start-time="2022-02-03 09:35:14Z" end-time="2022-02-03 09:35:16Z" duration="1.844921">
+  <command-line><![CDATA[C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\SpecFlowAllure.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1013" name="SpecFlowAllure.dll" fullname="C:/Studies/Projects/VS_Projects/AT/SpecFlowAllure/SpecFlowAllure/bin/Debug/net5.0/SpecFlowAllure.dll" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2022-02-03T09:35:14.7013860Z" end-time="2022-02-03T09:35:16.3497531Z" duration="1.648296" total="10" passed="6" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="12">
+    <environment framework-version="3.13.2.0" clr-version="5.0.12" os-version="Microsoft Windows 10.0.19043" platform="Win32NT" cwd="C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure" machine-name="DESKTOP-H0VPP8Q" user="Timur" user-domain="DESKTOP-H0VPP8Q" culture="ru-RU" uiculture="ru-RU" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="28068" />
+      <property name="_APPDOMAIN" value="SpecFlowAllure" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="SetUpFixture" id="0-1000" name="[default namespace]" fullname="SpecFlowAllure_NUnitAssemblyHooks" classname="SpecFlowAllure_NUnitAssemblyHooks" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2022-02-03T09:35:14.7104047Z" end-time="2022-02-03T09:35:16.3497212Z" duration="1.639316" total="10" passed="6" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="12">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <output><![CDATA[-> Loading plugin C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\Allure.SpecFlowPlugin.dll
+-> Loading plugin C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+-> Loading plugin C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\bin\Debug\net5.0\SpecFlowAllure.dll
+-> Using specflow.json
+]]></output>
+      <test-suite type="TestSuite" id="0-1014" name="SpecFlowAllure" fullname="SpecFlowAllure" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2022-02-03T09:35:15.0776620Z" end-time="2022-02-03T09:35:16.3478561Z" duration="1.270193" total="10" passed="6" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="12">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="0-1015" name="Features" fullname="SpecFlowAllure.Features" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2022-02-03T09:35:15.0777323Z" end-time="2022-02-03T09:35:16.3478300Z" duration="1.270099" total="10" passed="6" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="12">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="0-1001" name="КалькуляторFeature" fullname="SpecFlowAllure.Features.КалькуляторFeature" classname="SpecFlowAllure.Features.КалькуляторFeature" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2022-02-03T09:35:15.0778075Z" end-time="2022-02-03T09:35:15.6359155Z" duration="0.558109" total="3" passed="1" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="Description" value="Калькулятор" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1004" name="ВычитаниеДвухЧисел" fullname="SpecFlowAllure.Features.КалькуляторFeature.ВычитаниеДвухЧисел" methodname="ВычитаниеДвухЧисел" classname="SpecFlowAllure.Features.КалькуляторFeature" runstate="Runnable" seed="1085914835" result="Passed" start-time="2022-02-03T09:35:15.2740842Z" end-time="2022-02-03T09:35:15.3711391Z" duration="0.097194" asserts="0">
+              <properties>
+                <property name="Description" value="Вычитание двух чисел" />
+              </properties>
+              <output><![CDATA[Пусть первое число 70
+-> done: CalculatorStepDefinitions.GivenTheFirstNumberIs(70) (0,0s)
+И второе число 50
+-> done: CalculatorStepDefinitions.GivenTheSecondNumberIs(50) (0,0s)
+Когда два числа вычитаются
+-> done: CalculatorStepDefinitions.WhenTheTwoNumbersAreSubtracted() (0,0s)
+Тогда результат должен быть 20
+-> done: CalculatorStepDefinitions.ThenTheResultShouldBe(20) (0,0s)
+SpecFlowAllure.Features.КалькуляторFeature.ВычитаниеДвухЧисел
+]]></output>
+            </test-case>
+            <test-case id="0-1003" name="Приветствие" fullname="SpecFlowAllure.Features.КалькуляторFeature.Приветствие" methodname="Приветствие" classname="SpecFlowAllure.Features.КалькуляторFeature" runstate="Runnable" seed="1363682078" result="Failed" start-time="2022-02-03T09:35:15.3737268Z" end-time="2022-02-03T09:35:15.5505075Z" duration="0.176780" asserts="0">
+              <properties>
+                <property name="Description" value="Приветствие" />
+              </properties>
+              <failure>
+                <message><![CDATA[Expected answer_str to be "World" with a length of 5, but "World2" has a length of 6, differs near "2" (index 5).]]></message>
+                <stack-trace><![CDATA[   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Primitives.StringEqualityValidator.ValidateAgainstLengthDifferences()
+   at FluentAssertions.Primitives.StringValidator.Validate()
+   at FluentAssertions.Primitives.StringAssertions`1.Be(String expected, String because, Object[] becauseArgs)
+   at SpecFlowAllure.Steps.CalculatorStepDefinitions.ThenAnswerIs(String answer_str) in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Steps\CalculatorStepDefinitions.cs:line 84
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at SpecFlowAllure.Features.КалькуляторFeature.ScenarioCleanup()
+   at SpecFlowAllure.Features.КалькуляторFeature.Приветствие() in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Features\Calculator.feature:line 17
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Пусть пользователь ввел "Hello"
+-> done: CalculatorStepDefinitions.GivenInputIs("Hello") (0,0s)
+Тогда ответ "World2"
+-> error: Expected answer_str to be "World" with a length of 5, but "World2" has a length of 6, differs near "2" (index 5). (0,2s)
+SpecFlowAllure.Features.КалькуляторFeature.Приветствие
+]]></output>
+            </test-case>
+            <test-case id="0-1002" name="СложениеДвухЧисел" fullname="SpecFlowAllure.Features.КалькуляторFeature.СложениеДвухЧисел" methodname="СложениеДвухЧисел" classname="SpecFlowAllure.Features.КалькуляторFeature" runstate="Runnable" seed="1204507375" result="Failed" start-time="2022-02-03T09:35:15.5507089Z" end-time="2022-02-03T09:35:15.5678920Z" duration="0.017183" asserts="0">
+              <properties>
+                <property name="Description" value="Сложение двух чисел" />
+                <property name="Category" value="mytag" />
+              </properties>
+              <failure>
+                <message><![CDATA[Expected result to be 120, but found 126.]]></message>
+                <stack-trace><![CDATA[   at FluentAssertions.Execution.LateBoundTestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`2.Be(T expected, String because, Object[] becauseArgs)
+   at SpecFlowAllure.Steps.CalculatorStepDefinitions.ThenTheResultShouldBe(Int32 result) in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Steps\CalculatorStepDefinitions.cs:line 69
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at SpecFlowAllure.Features.КалькуляторFeature.ScenarioCleanup()
+   at SpecFlowAllure.Features.КалькуляторFeature.СложениеДвухЧисел() in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Features\Calculator.feature:line 13
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Пусть первое число 50
+-> done: CalculatorStepDefinitions.GivenTheFirstNumberIs(50) (0,0s)
+И второе число 70
+-> done: CalculatorStepDefinitions.GivenTheSecondNumberIs(70) (0,0s)
+Когда два числа суммируются
+-> done: CalculatorStepDefinitions.WhenTheTwoNumbersAreAdded() (0,0s)
+Тогда результат должен быть 126
+-> error: Expected result to be 120, but found 126. (0,0s)
+SpecFlowAllure.Features.КалькуляторFeature.СложениеДвухЧисел
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1005" name="ФункциональнаяПроверкаFeature" fullname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature" classname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature" runstate="Runnable" testcasecount="7" result="Failed" site="Child" start-time="2022-02-03T09:35:15.6386087Z" end-time="2022-02-03T09:35:16.3477614Z" duration="0.709151" total="7" passed="5" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="12">
+            <properties>
+              <property name="Description" value="Функциональная проверка" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1006" name="ВходВОбъекты" fullname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ВходВОбъекты" methodname="ВходВОбъекты" classname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature" runstate="Runnable" seed="361774815" result="Passed" start-time="2022-02-03T09:35:15.6392573Z" end-time="2022-02-03T09:35:15.7330285Z" duration="0.093771" asserts="2">
+              <properties>
+                <property name="Description" value="Вход в объекты" />
+                <property name="Category" value="layer:web" />
+                <property name="Category" value="story:Объекты" />
+                <property name="Category" value="microservice:test" />
+              </properties>
+              <output><![CDATA[Когда условие true
+-> done: CalculatorStepDefinitions.WhenConditionIsTrue(True) (0,0s)
+Тогда объект работает
+-> done: CalculatorStepDefinitions.ObjectIsRunning() (0,0s)
+SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ВходВОбъекты
+]]></output>
+            </test-case>
+            <test-case id="0-1007" name="ДобавлениеОбъекта" fullname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ДобавлениеОбъекта" methodname="ДобавлениеОбъекта" classname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature" runstate="Runnable" seed="1410614325" result="Failed" start-time="2022-02-03T09:35:15.7330603Z" end-time="2022-02-03T09:35:15.8381628Z" duration="0.105103" asserts="1">
+              <properties>
+                <property name="Description" value="Добавление объекта" />
+                <property name="Category" value="layer:web" />
+                <property name="Category" value="story:Объекты" />
+                <property name="Category" value="microservice:test" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[   at SpecFlowAllure.Steps.CalculatorStepDefinitions.WhenConditionIsTrue(Boolean cond) in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Steps\CalculatorStepDefinitions.cs:line 98
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ScenarioCleanup()
+   at SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ДобавлениеОбъекта() in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Features\Objects.feature:line 16
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Когда условие false
+-> error:   Expected: True
+  But was:  False
+ (0,0s)
+Тогда объект работает
+-> skipped because of previous errors
+SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ДобавлениеОбъекта
+]]></output>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[   at SpecFlowAllure.Steps.CalculatorStepDefinitions.WhenConditionIsTrue(Boolean cond) in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Steps\CalculatorStepDefinitions.cs:line 98
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1008" name="ИзменениеОбъекта" fullname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ИзменениеОбъекта" methodname="ИзменениеОбъекта" classname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature" runstate="Runnable" seed="1200352583" result="Passed" start-time="2022-02-03T09:35:15.8381954Z" end-time="2022-02-03T09:35:15.9229828Z" duration="0.084787" asserts="2">
+              <properties>
+                <property name="Description" value="Изменение объекта" />
+                <property name="Category" value="layer:web" />
+                <property name="Category" value="story:Объекты" />
+                <property name="Category" value="microservice:test" />
+              </properties>
+              <output><![CDATA[Когда условие true
+-> done: CalculatorStepDefinitions.WhenConditionIsTrue(True) (0,0s)
+Тогда объект работает
+-> done: CalculatorStepDefinitions.ObjectIsRunning() (0,0s)
+SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ИзменениеОбъекта
+]]></output>
+            </test-case>
+            <test-case id="0-1009" name="ПроверкаРассчета" fullname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ПроверкаРассчета" methodname="ПроверкаРассчета" classname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature" runstate="Runnable" seed="117084445" result="Failed" start-time="2022-02-03T09:35:15.9230145Z" end-time="2022-02-03T09:35:16.0091875Z" duration="0.086173" asserts="1">
+              <properties>
+                <property name="Description" value="Проверка рассчета" />
+                <property name="Category" value="layer:web" />
+                <property name="Category" value="story:Рассчеты" />
+                <property name="Category" value="microservice:test" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[   at SpecFlowAllure.Steps.CalculatorStepDefinitions.WhenConditionIsTrue(Boolean cond) in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Steps\CalculatorStepDefinitions.cs:line 98
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at Allure.SpecFlowPlugin.AllureBindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ScenarioCleanup()
+   at SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ПроверкаРассчета() in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Features\Objects.feature:line 30
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Когда условие false
+-> error:   Expected: True
+  But was:  False
+ (0,0s)
+Тогда объект работает
+-> skipped because of previous errors
+SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ПроверкаРассчета
+]]></output>
+              <assertions>
+                <assertion result="Failed">
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[   at SpecFlowAllure.Steps.CalculatorStepDefinitions.WhenConditionIsTrue(Boolean cond) in C:\Studies\Projects\VS_Projects\AT\SpecFlowAllure\SpecFlowAllure\Steps\CalculatorStepDefinitions.cs:line 98
+]]></stack-trace>
+                </assertion>
+              </assertions>
+            </test-case>
+            <test-case id="0-1011" name="ПроверкаСправочника" fullname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ПроверкаСправочника" methodname="ПроверкаСправочника" classname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature" runstate="Runnable" seed="1823089159" result="Passed" start-time="2022-02-03T09:35:16.0092191Z" end-time="2022-02-03T09:35:16.1007245Z" duration="0.091505" asserts="2">
+              <properties>
+                <property name="Description" value="Проверка справочника" />
+                <property name="Category" value="layer:web" />
+                <property name="Category" value="story:Справочники" />
+                <property name="Category" value="microservice:test" />
+              </properties>
+              <output><![CDATA[Когда условие true
+-> done: CalculatorStepDefinitions.WhenConditionIsTrue(True) (0,0s)
+Тогда объект работает
+-> done: CalculatorStepDefinitions.ObjectIsRunning() (0,0s)
+SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.ПроверкаСправочника
+]]></output>
+            </test-case>
+            <test-case id="0-1010" name="УдалениеРассчета" fullname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.УдалениеРассчета" methodname="УдалениеРассчета" classname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature" runstate="Runnable" seed="1486127537" result="Passed" start-time="2022-02-03T09:35:16.1007601Z" end-time="2022-02-03T09:35:16.2207542Z" duration="0.119994" asserts="2">
+              <properties>
+                <property name="Description" value="Удаление рассчета" />
+                <property name="Category" value="layer:web" />
+                <property name="Category" value="story:Рассчеты" />
+                <property name="Category" value="microservice:test" />
+              </properties>
+              <output><![CDATA[Когда условие true
+-> done: CalculatorStepDefinitions.WhenConditionIsTrue(True) (0,0s)
+Тогда объект работает
+-> done: CalculatorStepDefinitions.ObjectIsRunning() (0,0s)
+SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.УдалениеРассчета
+]]></output>
+            </test-case>
+            <test-case id="0-1012" name="УдалениеСправочника" fullname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.УдалениеСправочника" methodname="УдалениеСправочника" classname="SpecFlowAllure.Features.ФункциональнаяПроверкаFeature" runstate="Runnable" seed="1846343164" result="Passed" start-time="2022-02-03T09:35:16.2208064Z" end-time="2022-02-03T09:35:16.3298407Z" duration="0.109034" asserts="2">
+              <properties>
+                <property name="Description" value="Удаление справочника" />
+                <property name="Category" value="layer:web" />
+                <property name="Category" value="story:Справочники" />
+                <property name="Category" value="microservice:test" />
+              </properties>
+              <output><![CDATA[Когда условие true
+-> done: CalculatorStepDefinitions.WhenConditionIsTrue(True) (0,0s)
+Тогда объект работает
+-> done: CalculatorStepDefinitions.ObjectIsRunning() (0,0s)
+SpecFlowAllure.Features.ФункциональнаяПроверкаFeature.УдалениеСправочника
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

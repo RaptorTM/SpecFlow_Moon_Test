@@ -1,4 +1,4 @@
-﻿using Allure.Commons;
+﻿//using Allure.Commons;
 using FluentAssertions;
 using NUnit.Framework;
 using System;
@@ -88,7 +88,6 @@ namespace SpecFlowAllure.Steps
         public void WhenTheTwoNumbersAreSubtracted()
         {
             //TODO: implement act (action) logic
-
             //_scenarioContext.Pending();
             Result = FirstNumber - SecondtNumber;
         }
