@@ -8,7 +8,7 @@ image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
 variables:
     ALLURE_LAUNCH_NAME: "${CI_PROJECT_NAME} - ${CI_COMMIT_SHORT_SHA}" #mandatory
     ALLURE_LAUNCH_TAGS: "regular, ${CI_COMMIT_REF_NAME}" #mandatory
-    ALLURE_TESTPLAN_PATH: "./testplan.json" #mandatory
+    ALLURE_TESTPLAN_PATH: "testplan.json" #mandatory
     ALLURE_RESULTS: "allure-results" #mandatory
 test:
     stage: test
