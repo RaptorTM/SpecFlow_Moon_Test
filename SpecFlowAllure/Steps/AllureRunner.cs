@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text.Json;
+using System.Xml;
 using NUnit.Engine;
 
 namespace SpecFlowAllure.Steps
@@ -22,10 +23,10 @@ namespace SpecFlowAllure.Steps
             {
                 var filterService = engine.Services.GetService<ITestFilterService>();
                 var builder = filterService.GetTestFilterBuilder();
-
                 var testPlan = getTestPlan();
                 if (testPlan != null)
                 {
+                    Console.WriteLine("Not empty");
                     foreach (var testCase in testPlan.Tests)
                     {
                         builder.AddTest(testCase.Selector);
@@ -35,7 +36,15 @@ namespace SpecFlowAllure.Steps
                 var filter = builder.GetFilter();
                 using (ITestRunner runner = engine.GetRunner(package))
                 {
-                    runner.Run(listener: null, filter: filter);
+                    //var result = runner.Run(listener: null, filter: filter);
+                    var result = runner.Run(listener: null, filter: filter);
+                    //Console.WriteLine(result.OuterXml);
+                    XmlDocument doc = new XmlDocument();
+                    var xml_str = result.OuterXml;
+
+                    doc.LoadXml(xml_str);
+                    Console.WriteLine(Path.Combine(Environment.CurrentDirectory, "TestResults.xml"));
+                    doc.Save(Path.Combine(Environment.CurrentDirectory, "TestResults.xml"));
                 }
             }
         }
