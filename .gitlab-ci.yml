@@ -16,8 +16,10 @@ test:
         - wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_386 -O ./allurectl
         - chmod +x ./allurectl
     script:
+        - ls
         - dotnet restore
         - ./allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
         - cat testplan.json
         - ./allurectl watch -- dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
+        - ls
     allow_failure: true
