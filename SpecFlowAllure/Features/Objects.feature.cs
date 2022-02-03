@@ -76,14 +76,14 @@ namespace SpecFlowAllure.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Вход в объекты")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
-        [NUnit.Framework.CategoryAttribute("story:Объекты")]
-        [NUnit.Framework.CategoryAttribute("microservice:test")]
+        [NUnit.Framework.CategoryAttribute("allure.label.story:Объекты")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebObjects")]
         public virtual void ВходВОбъекты()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
-                    "story:Объекты",
-                    "microservice:test"};
+                    "allure.label.story:Объекты",
+                    "allure.label.microservice:WebObjects"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Вход в объекты", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
@@ -120,13 +120,13 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("Добавление объекта")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
         [NUnit.Framework.CategoryAttribute("story:Объекты")]
-        [NUnit.Framework.CategoryAttribute("microservice:test")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebObjects")]
         public virtual void ДобавлениеОбъекта()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
                     "story:Объекты",
-                    "microservice:test"};
+                    "allure.label.microservice:WebObjects"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Добавление объекта", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 14
@@ -163,13 +163,13 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("Изменение объекта")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
         [NUnit.Framework.CategoryAttribute("story:Объекты")]
-        [NUnit.Framework.CategoryAttribute("microservice:test")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebObjects")]
         public virtual void ИзменениеОбъекта()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
                     "story:Объекты",
-                    "microservice:test"};
+                    "allure.label.microservice:WebObjects"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Изменение объекта", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 21
@@ -206,13 +206,13 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("Проверка рассчета")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
         [NUnit.Framework.CategoryAttribute("story:Рассчеты")]
-        [NUnit.Framework.CategoryAttribute("microservice:test")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCalculations")]
         public virtual void ПроверкаРассчета()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
                     "story:Рассчеты",
-                    "microservice:test"};
+                    "allure.label.microservice:WebCalculations"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Проверка рассчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 28
@@ -249,13 +249,13 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("Удаление рассчета")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
         [NUnit.Framework.CategoryAttribute("story:Рассчеты")]
-        [NUnit.Framework.CategoryAttribute("microservice:test")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCalculations")]
         public virtual void УдалениеРассчета()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
                     "story:Рассчеты",
-                    "microservice:test"};
+                    "allure.label.microservice:WebCalculations"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление рассчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 35
@@ -292,13 +292,13 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("Проверка справочника")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
         [NUnit.Framework.CategoryAttribute("story:Справочники")]
-        [NUnit.Framework.CategoryAttribute("microservice:test")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
         public virtual void ПроверкаСправочника()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
                     "story:Справочники",
-                    "microservice:test"};
+                    "allure.label.microservice:WebCatalog"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Проверка справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 42
@@ -335,13 +335,13 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("Удаление справочника")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
         [NUnit.Framework.CategoryAttribute("story:Справочники")]
-        [NUnit.Framework.CategoryAttribute("microservice:test")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
         public virtual void УдалениеСправочника()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
                     "story:Справочники",
-                    "microservice:test"};
+                    "allure.label.microservice:WebCatalog"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 49

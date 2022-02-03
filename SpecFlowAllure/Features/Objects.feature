@@ -2,50 +2,50 @@
 
 
 @layer:web
-@story:Объекты
-@microservice:test
+@allure.label.story:Объекты
+@allure.label.microservice:WebObjects
 Сценарий: Вход в объекты
 	Когда условие true
 	Тогда объект работает
 	
 @layer:web
 @story:Объекты
-@microservice:test
+@allure.label.microservice:WebObjects
 Сценарий: Добавление объекта
 	Когда условие false
 	Тогда объект работает
 
 @layer:web
 @story:Объекты
-@microservice:test
+@allure.label.microservice:WebObjects
 Сценарий: Изменение объекта
 	Когда условие true
 	Тогда объект работает
 
 @layer:web
 @story:Рассчеты
-@microservice:test
+@allure.label.microservice:WebCalculations
 Сценарий: Проверка рассчета
 	Когда условие false
 	Тогда объект работает
 
 @layer:web
 @story:Рассчеты
-@microservice:test
+@allure.label.microservice:WebCalculations
 Сценарий: Удаление рассчета
 	Когда условие true
 	Тогда объект работает
 
 @layer:web
 @story:Справочники
-@microservice:test
+@allure.label.microservice:WebCatalog
 Сценарий: Проверка справочника
 	Когда условие true
 	Тогда объект работает
 
 @layer:web
 @story:Справочники
-@microservice:test
+@allure.label.microservice:WebCatalog
 Сценарий: Удаление справочника
 	Когда условие true
 	Тогда объект работает

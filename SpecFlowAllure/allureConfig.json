@@ -23,8 +23,7 @@
       },
       "behaviors": {
         "epic": "^epic:?(.+)",
-        "story": "^story:?(.+)",
-        "task": "^task:?(.+)"
+        "story": "^story:?(.+)"
       },
       "packages": {
         "package": "^package:?(.+)",
