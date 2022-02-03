@@ -57,18 +57,18 @@ namespace SpecFlowAllure.Steps
                 return null;
             }
 
-            try
-            {
-                var testPlanJson = File.ReadAllText(testPlanPath);
+            //try
+            //{
+            var testPlanJson = File.ReadAllText(testPlanPath);
 
-                var options = new JsonSerializerOptions();
-                options.PropertyNameCaseInsensitive = true;
-                return JsonSerializer.Deserialize<TestPlan>(testPlanJson, options);
-            }
-            catch (Exception e)
-            {
-                return null;
-            }
+            var options = new JsonSerializerOptions();
+            options.PropertyNameCaseInsensitive = true;
+            return JsonSerializer.Deserialize<TestPlan>(testPlanJson, options);
+            //}
+            //catch (Exception e)
+            //{
+            //    return null;
+            //}
         }
 
         public static string? getTestPlanPath()
