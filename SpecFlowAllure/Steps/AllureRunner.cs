@@ -24,6 +24,7 @@ namespace SpecFlowAllure.Steps
                 var filterService = engine.Services.GetService<ITestFilterService>();
                 var builder = filterService.GetTestFilterBuilder();
                 var testPlan = getTestPlan();
+                Console.WriteLine(testPlan.Tests[0].Selector);
                 if (testPlan != null)
                 {
                     Console.WriteLine("Not empty");
