@@ -37,14 +37,13 @@ namespace SpecFlowAllure.Steps
                 using (ITestRunner runner = engine.GetRunner(package))
                 {
                     //var result = runner.Run(listener: null, filter: filter);
-                    var result = runner.Run(listener: null, filter: filter);
-                    //Console.WriteLine(result.OuterXml);
-                    XmlDocument doc = new XmlDocument();
-                    var xml_str = result.OuterXml;
+                    runner.Run(listener: null, filter: filter);
+                    //XmlDocument doc = new XmlDocument();
+                    //var xml_str = result.OuterXml;
 
-                    doc.LoadXml(xml_str);
-                    Console.WriteLine(Path.Combine(Environment.CurrentDirectory, "TestResults.xml"));
-                    doc.Save(Path.Combine(Environment.CurrentDirectory, "TestResults.xml"));
+                    //doc.LoadXml(xml_str);
+                    //Console.WriteLine(Path.Combine(Environment.CurrentDirectory, "TestResults.xml"));
+                    //doc.Save(Path.Combine(Environment.CurrentDirectory, "TestResults.xml"));
                 }
             }
         }
