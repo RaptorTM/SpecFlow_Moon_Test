@@ -203,18 +203,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Проверка рассчета")]
+        [NUnit.Framework.DescriptionAttribute("Удаление объекта")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
-        [NUnit.Framework.CategoryAttribute("story:Рассчеты")]
-        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCalculations")]
-        public virtual void ПроверкаРассчета()
+        [NUnit.Framework.CategoryAttribute("story:Объекты")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebObjects")]
+        public virtual void УдалениеОбъекта()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
-                    "story:Рассчеты",
-                    "allure.label.microservice:WebCalculations"};
+                    "story:Объекты",
+                    "allure.label.microservice:WebObjects"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Проверка рассчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление объекта", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 28
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -236,7 +236,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 29
- testRunner.When("условие false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
+ testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
 #line 30
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
@@ -246,18 +246,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Удаление рассчета")]
+        [NUnit.Framework.DescriptionAttribute("Проверка рассчета")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
         [NUnit.Framework.CategoryAttribute("story:Рассчеты")]
         [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCalculations")]
-        public virtual void УдалениеРассчета()
+        public virtual void ПроверкаРассчета()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
                     "story:Рассчеты",
                     "allure.label.microservice:WebCalculations"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление рассчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Проверка рассчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 35
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -279,7 +279,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 36
- testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
+ testRunner.When("условие false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
 #line 37
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
@@ -289,18 +289,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Проверка справочника")]
+        [NUnit.Framework.DescriptionAttribute("Добавление расчета")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
-        [NUnit.Framework.CategoryAttribute("story:Справочники")]
-        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
-        public virtual void ПроверкаСправочника()
+        [NUnit.Framework.CategoryAttribute("story:Рассчеты")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebObjects")]
+        public virtual void ДобавлениеРасчета()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
-                    "story:Справочники",
-                    "allure.label.microservice:WebCatalog"};
+                    "story:Рассчеты",
+                    "allure.label.microservice:WebObjects"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Проверка справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Добавление расчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 42
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -332,18 +332,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Удаление справочника")]
+        [NUnit.Framework.DescriptionAttribute("Удаление рассчета")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
-        [NUnit.Framework.CategoryAttribute("story:Справочники")]
-        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
-        public virtual void УдалениеСправочника()
+        [NUnit.Framework.CategoryAttribute("story:Рассчеты")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCalculations")]
+        public virtual void УдалениеРассчета()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
-                    "story:Справочники",
-                    "allure.label.microservice:WebCatalog"};
+                    "story:Рассчеты",
+                    "allure.label.microservice:WebCalculations"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление рассчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 49
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -368,6 +368,135 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
 #line 51
+ testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Проверка справочника")]
+        [NUnit.Framework.CategoryAttribute("layer:web")]
+        [NUnit.Framework.CategoryAttribute("story:Справочники")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
+        public virtual void ПроверкаСправочника()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "layer:web",
+                    "story:Справочники",
+                    "allure.label.microservice:WebCatalog"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Проверка справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 56
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 57
+ testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
+#line hidden
+#line 58
+ testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Создание справочника")]
+        [NUnit.Framework.CategoryAttribute("layer:web")]
+        [NUnit.Framework.CategoryAttribute("story:Справочники")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebObjects")]
+        public virtual void СозданиеСправочника()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "layer:web",
+                    "story:Справочники",
+                    "allure.label.microservice:WebObjects"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Создание справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 63
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 64
+ testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
+#line hidden
+#line 65
+ testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Удаление справочника")]
+        [NUnit.Framework.CategoryAttribute("layer:web")]
+        [NUnit.Framework.CategoryAttribute("story:Справочники")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
+        public virtual void УдалениеСправочника()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "layer:web",
+                    "story:Справочники",
+                    "allure.label.microservice:WebCatalog"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 70
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 71
+ testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
+#line hidden
+#line 72
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
