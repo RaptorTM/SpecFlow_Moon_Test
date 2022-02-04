@@ -85,9 +85,9 @@
 	Когда условие true
 	Тогда объект работает
 
-@layer:web
-@story:"Поиск"
-@allure.label.microservice:WebCatalog
-Сценарий: Поиск расчета с помощью строки поиска
-	Когда условие true
-	Тогда объект не работает
+#@layer:web
+#@story:"Поиск"
+#@allure.label.microservice:WebCatalog
+#Сценарий: Поиск расчета с помощью строки поиска
+#	Когда условие true
+#	Тогда объект не работает
