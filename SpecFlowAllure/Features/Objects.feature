@@ -78,7 +78,7 @@
 	Тогда объект работает
 
 @layer:web
-@story:"Профиль"
+@story:Профиль-пользователя
 @allure.label.microservice:WebCatalog
 @allure.label.layer:selenium
 Сценарий: Просмотр профиля
@@ -86,7 +86,7 @@
 	Тогда объект работает
 
 @layer:web
-@story:"Профиль"
+@story:Профиль_пользователя
 @allure.label.microservice:WebCatalog
 @allure.label.layer:selenium
 Сценарий: Изменение полей профиля

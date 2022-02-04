@@ -518,14 +518,14 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Просмотр профиля")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
-        [NUnit.Framework.CategoryAttribute("story:\"Профиль\"")]
+        [NUnit.Framework.CategoryAttribute("story:Профиль-пользователя")]
         [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
         [NUnit.Framework.CategoryAttribute("allure.label.layer:selenium")]
         public virtual void ПросмотрПрофиля()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
-                    "story:\"Профиль\"",
+                    "story:Профиль-пользователя",
                     "allure.label.microservice:WebCatalog",
                     "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
@@ -563,14 +563,14 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Изменение полей профиля")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
-        [NUnit.Framework.CategoryAttribute("story:\"Профиль\"")]
+        [NUnit.Framework.CategoryAttribute("story:Профиль_пользователя")]
         [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
         [NUnit.Framework.CategoryAttribute("allure.label.layer:selenium")]
         public virtual void ИзменениеПолейПрофиля()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
-                    "story:\"Профиль\"",
+                    "story:Профиль_пользователя",
                     "allure.label.microservice:WebCatalog",
                     "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
