@@ -17,7 +17,6 @@ namespace SpecFlowAllure.Steps
         private int FirstNumber;
         private int SecondtNumber;
         private int Result;
-        private string Str;
 
         public CalculatorStepDefinitions(ScenarioContext scenarioContext)
         {
@@ -74,7 +73,7 @@ namespace SpecFlowAllure.Steps
         [Given(@"пользователь ввел ""(.*)""")]
         public void GivenInputIs(string input_str)
         {
-            Str = input_str;
+            Assert.IsTrue(true);
         }
 
         [Then(@"ответ ""(.*)""")]
