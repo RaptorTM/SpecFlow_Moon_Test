@@ -545,6 +545,92 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Изменение полей профиля")]
+        [NUnit.Framework.CategoryAttribute("layer:web")]
+        [NUnit.Framework.CategoryAttribute("story:\"Профиль\"")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
+        public virtual void ИзменениеПолейПрофиля()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "layer:web",
+                    "story:\"Профиль\"",
+                    "allure.label.microservice:WebCatalog"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Изменение полей профиля", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 84
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 85
+ testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
+#line hidden
+#line 86
+ testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Поиск расчета с помощью строки поиска")]
+        [NUnit.Framework.CategoryAttribute("layer:web")]
+        [NUnit.Framework.CategoryAttribute("story:\"Поиск\"")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
+        public virtual void ПоискРасчетаСПомощьюСтрокиПоиска()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "layer:web",
+                    "story:\"Поиск\"",
+                    "allure.label.microservice:WebCatalog"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Поиск расчета с помощью строки поиска", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 91
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 92
+ testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
+#line hidden
+#line 93
+ testRunner.Then("объект не работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

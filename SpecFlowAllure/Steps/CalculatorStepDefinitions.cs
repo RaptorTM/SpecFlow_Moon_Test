@@ -102,5 +102,11 @@ namespace SpecFlowAllure.Steps
         {
             Assert.IsTrue(true);
         }
+
+        [Then("объект не работает")]
+        public void ObjectIsNotRunning()
+        {
+            Assert.IsTrue(true);
+        }
     }
 }
