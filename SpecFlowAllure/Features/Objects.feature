@@ -6,7 +6,7 @@
 @allure.label.microservice:WebObjects
 @allure.label.layer:selenium
 Сценарий: Вход в объекты
-	Когда условие true
+	Когда условие false
 	Тогда объект работает
 	
 @layer:web
