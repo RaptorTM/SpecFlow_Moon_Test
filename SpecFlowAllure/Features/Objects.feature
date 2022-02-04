@@ -4,6 +4,7 @@
 @layer:web
 @allure.label.story:Объекты
 @allure.label.microservice:WebObjects
+@allure.label.layer:selenium
 Сценарий: Вход в объекты
 	Когда условие true
 	Тогда объект работает
@@ -11,6 +12,7 @@
 @layer:web
 @story:Объекты
 @allure.label.microservice:WebObjects
+@allure.label.layer:selenium
 Сценарий: Добавление объекта
 	Когда условие false
 	Тогда объект работает
@@ -18,6 +20,7 @@
 @layer:web
 @story:Объекты
 @allure.label.microservice:WebObjects
+@allure.label.layer:selenium
 Сценарий: Изменение объекта
 	Когда условие true
 	Тогда объект работает
@@ -53,6 +56,7 @@
 @layer:web
 @story:Справочники
 @allure.label.microservice:WebCatalog
+@allure.label.layer:selenium
 Сценарий: Проверка справочника
 	Когда условие true
 	Тогда объект работает
@@ -60,6 +64,7 @@
 @layer:web
 @story:Справочники
 @allure.label.microservice:WebObjects
+@allure.label.layer:selenium
 Сценарий: Создание справочника
 	Когда условие true
 	Тогда объект работает
@@ -67,6 +72,7 @@
 @layer:web
 @story:Справочники
 @allure.label.microservice:WebCatalog
+@allure.label.layer:selenium
 Сценарий: Удаление справочника
 	Когда условие true
 	Тогда объект работает
@@ -74,6 +80,7 @@
 @layer:web
 @story:"Профиль"
 @allure.label.microservice:WebCatalog
+@allure.label.layer:selenium
 Сценарий: Просмотр профиля
 	Когда условие true
 	Тогда объект работает
@@ -81,6 +88,7 @@
 @layer:web
 @story:"Профиль"
 @allure.label.microservice:WebCatalog
+@allure.label.layer:selenium
 Сценарий: Изменение полей профиля
 	Когда условие true
 	Тогда объект работает
