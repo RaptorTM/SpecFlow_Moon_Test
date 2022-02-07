@@ -20,6 +20,12 @@ run-nunit:
     stage: run-nunit
     
     script:
+        - echo "-------------------- Global Project Env----------------------"
+        - echo ${PRIVATE_TOKEN}
+        - echo ${PROJECT_ID}
+        - echo ${TEST_PLAN_GLOBAL_ID}
+        - echo ${TEST_RUN_ID}
+        - echo ${URL}
         - dotnet restore
         - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
     artifacts:
