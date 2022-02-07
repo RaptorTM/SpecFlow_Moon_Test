@@ -22,8 +22,8 @@ run-nunit:
     script:
         - dotnet restore
         - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
-#    artifacts:
-#        when: always
+    artifacts:
+        when: always
 #        paths:
 #            - allure-report/
 #            - allure-results/        
