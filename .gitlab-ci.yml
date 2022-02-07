@@ -17,14 +17,26 @@ test:
     script:
         - dotnet restore
         - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
-        
+        - echo "--------------------------------allure-report Windows----------------------------------------"
+        - ls allure-report/
+        - echo "--------------------------------allure-results Windows----------------------------------------"
+        - ls allure-results/
+    artifacts:
+        when: always
+        paths:
+            - allure-report/
+            - allure-results/        
     allow_failure: true
 run-testit-allure-adaptor:
         image: python:3.7-alpine3.15
         script:
         - pip install testit-allure-adaptor
         - testit --resultsdir ${ALLURE_RESULTS}
-        - cat ${ALLURE_RESULTS}
+        - echo "--------------------------------allure-report adaptor----------------------------------------"
+        - ls allure-report/
+        - echo "--------------------------------allure-results adaptor----------------------------------------"
+        - ls allure-results/
+
 
 
 
