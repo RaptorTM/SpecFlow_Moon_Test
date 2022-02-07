@@ -19,8 +19,8 @@ test:
         - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
         
     allow_failure: true
-test-python-3-7:
-        image: python:3.7-alpine3.9
+run-testit-allure-adaptor:
+        image: python:3.7-alpine3.15
         script:
         - pip install testit-allure-adaptor
         - testit --resultsdir ${ALLURE_RESULTS}
