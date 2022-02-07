@@ -24,6 +24,7 @@ run-testit-allure-adaptor:
         script:
         - pip install testit-allure-adaptor
         - testit --resultsdir ${ALLURE_RESULTS}
+        - echo ${ALLURE_RESULTS}
 
 
 
