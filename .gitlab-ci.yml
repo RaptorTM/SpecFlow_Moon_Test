@@ -14,7 +14,7 @@ variables:
 
 stages:
   - test
-  - allure-report
+#  - allure-report
 
 test:
     stage: test
@@ -23,9 +23,9 @@ test:
         - dotnet restore
         - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
         - echo "--------------------------------allure-report Windows----------------------------------------"
-        - ls allure-report/
+        - dir allure-report/
         - echo "--------------------------------allure-results Windows----------------------------------------"
-        - ls allure-results/
+        - dir allure-results/
     artifacts:
         when: always
         paths:
@@ -33,17 +33,17 @@ test:
             - allure-results/        
     allow_failure: true
 
-run-testit-allure-adaptor:
-    stage: allure-report
-    image: python:3.7-alpine3.15
-    script:
-        - pip install testit-allure-adaptor
-        - testit --resultsdir ${ALLURE_RESULTS}
-        - echo "--------------------------------allure-report adaptor----------------------------------------"
-        - ls allure-report/
-        - echo "--------------------------------allure-results adaptor----------------------------------------"
-        - ls allure-results/
-    needs: ["test"]
+# run-testit-allure-adaptor:
+#     stage: allure-report
+#     image: python:3.7-alpine3.15
+#     script:
+#         - pip install testit-allure-adaptor
+#         - testit --resultsdir ${ALLURE_RESULTS}
+#         - echo "--------------------------------allure-report adaptor----------------------------------------"
+#         - ls allure-report/
+#         - echo "--------------------------------allure-results adaptor----------------------------------------"
+#         - ls allure-results/
+#     needs: ["test"]
 
 
 
