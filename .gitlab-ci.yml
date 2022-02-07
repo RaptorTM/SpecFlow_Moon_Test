@@ -22,15 +22,11 @@ run-nunit:
     script:
         - dotnet restore
         - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
-        - echo "--------------------------------allure-report Windows----------------------------------------"
-        - dir SpecFlowAllure/
-        - echo "--------------------------------allure-results Windows----------------------------------------"
-        - dir /
-    artifacts:
-        when: always
-        paths:
-            - allure-report/
-            - allure-results/        
+#    artifacts:
+#        when: always
+#        paths:
+#            - allure-report/
+#            - allure-results/        
     allow_failure: true
 
 run-testit-allure-adaptor:
