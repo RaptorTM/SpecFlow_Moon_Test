@@ -21,6 +21,9 @@ run-nunit:
     
     script:
         - echo "-------------------- Global Project Env----------------------"
+        - echo ${CI_COMMIT_SHORT_SHA}
+        - echo ${CI_COMMIT_REF_NAME}
+        - echo ${CI_PROJECT_NAME}
         - echo ${PRIVATE_TOKEN}
         - echo ${PROJECT_ID}
         - echo ${TEST_PLAN_GLOBAL_ID}
