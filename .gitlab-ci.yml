@@ -35,6 +35,10 @@ run-testit-allure-adaptor:
     script:
         - pip install testit-allure-adaptor
         - testit --resultsdir allure-results
+    artifacts:
+        when: always
+        paths:
+            - allure-results
     needs: ["run-nunit"]
 
 
