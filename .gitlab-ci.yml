@@ -13,12 +13,18 @@ variables:
     ALLURE_RESULTS: "allure-results" #mandatory
 test:
     stage: test
-    before_script:
-        - sudo apt-get install python
+
     script:
         - dotnet restore
         - ./allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
         - ./allurectl watch -- dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
-        - testit --resultsdir ${ALLURE_RESULTS}
+        
     allow_failure: true
+test-python-3-7:
+        image: python:3.7-alpine3.9
+        script:
+        - pip install testit-allure-adaptor
+        - testit --resultsdir ${ALLURE_RESULTS}
+
+
 
