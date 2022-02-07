@@ -5,7 +5,7 @@
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 image: mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
-image2: alpine:latest
+
 variables:
     ALLURE_LAUNCH_NAME: "${CI_PROJECT_NAME} - ${CI_COMMIT_SHORT_SHA}" #mandatory
     ALLURE_LAUNCH_TAGS: "regular, ${CI_COMMIT_REF_NAME}" #mandatory
@@ -14,11 +14,11 @@ variables:
 test:
     stage: test
     before_script:
-        - wget https://github.com/allure-framework/allurectl/releases/latest/download/allurectl_linux_386 -O ./allurectl
-        - chmod +x ./allurectl
+        - pip install testit-allure-adaptor
     script:
         - dotnet restore
         - ./allurectl job-run plan --output-file ${ALLURE_TESTPLAN_PATH}
         - ./allurectl watch -- dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
+        - testit --resultsdir ${ALLURE_RESULTS}
     allow_failure: true
 
