@@ -13,11 +13,11 @@ variables:
     ALLURE_RESULTS: "allure-results" #mandatory
 
 stages:
-  - test
-#  - allure-report
+  - run-nunit
+  - allure-report
 
-test:
-    stage: test
+run-nunit:
+    stage: run-nunit
     
     script:
         - dotnet restore
@@ -33,17 +33,13 @@ test:
             - allure-results/        
     allow_failure: true
 
-# run-testit-allure-adaptor:
-#     stage: allure-report
-#     image: python:3.7-alpine3.15
-#     script:
-#         - pip install testit-allure-adaptor
-#         - testit --resultsdir ${ALLURE_RESULTS}
-#         - echo "--------------------------------allure-report adaptor----------------------------------------"
-#         - ls allure-report/
-#         - echo "--------------------------------allure-results adaptor----------------------------------------"
-#         - ls allure-results/
-#     needs: ["test"]
+run-testit-allure-adaptor:
+    stage: allure-report
+    image: python:3.7-alpine3.15
+    script:
+        - pip install testit-allure-adaptor
+        - testit --resultsdir allure-results
+    needs: ["run-nunit"]
 
 
 
