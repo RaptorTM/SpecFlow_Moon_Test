@@ -11,9 +11,14 @@ variables:
     ALLURE_LAUNCH_TAGS: "regular, ${CI_COMMIT_REF_NAME}" #mandatory
     ALLURE_TESTPLAN_PATH: "testplan.json" #mandatory
     ALLURE_RESULTS: "allure-results" #mandatory
+
+stages:
+  - test
+  - allure-report
+
 test:
     stage: test
-
+    
     script:
         - dotnet restore
         - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
@@ -27,16 +32,18 @@ test:
             - allure-report/
             - allure-results/        
     allow_failure: true
+
 run-testit-allure-adaptor:
-        image: python:3.7-alpine3.15
-        script:
+    stage: allure-report
+    image: python:3.7-alpine3.15
+    script:
         - pip install testit-allure-adaptor
         - testit --resultsdir ${ALLURE_RESULTS}
         - echo "--------------------------------allure-report adaptor----------------------------------------"
         - ls allure-report/
         - echo "--------------------------------allure-results adaptor----------------------------------------"
         - ls allure-results/
-
+    needs: ["test"]
 
 
 
