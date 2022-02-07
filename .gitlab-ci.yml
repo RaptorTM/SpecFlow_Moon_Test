@@ -24,9 +24,9 @@ run-nunit:
         - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
     artifacts:
         when: always
-#        paths:
+        paths:
 #            - allure-report/
-#            - allure-results/        
+            - allure-results/        
     allow_failure: true
 
 run-testit-allure-adaptor:
