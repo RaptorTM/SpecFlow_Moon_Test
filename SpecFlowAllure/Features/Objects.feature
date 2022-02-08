@@ -1,10 +1,11 @@
-﻿Функция: Функциональная проверка
+Функция: Функциональная проверка
 
 
 @layer:web
 @allure.label.story:Объекты
 @allure.label.microservice:WebObjects
 @allure.label.layer:selenium
+@testit.externalID("1001")
 Сценарий: Вход в объекты
 	Когда условие false
 	Тогда объект работает
@@ -13,6 +14,7 @@
 @story:Объекты
 @allure.label.microservice:WebObjects
 @allure.label.layer:selenium
+@testit.externalID("1001")
 Сценарий: Добавление объекта
 	Когда условие false
 	Тогда объект работает
