@@ -43,7 +43,7 @@ run-testit-allure-adaptor:
     image: python:3.7-alpine3.15
     script:
         - pip install testit-allure-adaptor
-        - testit --resultsdir allure-results
+        - testit --url=${URL} --privatetoken=${PRIVATE_TOKEN} --projectid=${PROJECT_ID} --configurationid=${CONFIGURATION_ID} --resultsdir allure-results
     artifacts:
         when: always
         paths:
