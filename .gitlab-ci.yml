@@ -26,6 +26,7 @@ run-nunit:
         - echo ${CI_PROJECT_NAME}
         - echo ${PRIVATE_TOKEN}
         - echo ${PROJECT_ID}
+        - echo ${CONFIGURATION_ID}
         - echo ${TEST_PLAN_GLOBAL_ID}
         - echo ${TEST_RUN_ID}
         - echo ${URL}
