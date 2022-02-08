@@ -6,6 +6,8 @@
 @allure.label.microservice:WebObjects
 @allure.label.layer:selenium
 @testit.externalID("1001")
+@testit.namespace("SpecFlow_Test_v2.Actions")
+@testit.class("Класс 1")
 Сценарий: Вход в объекты
 	Когда условие false
 	Тогда объект работает
@@ -15,6 +17,8 @@
 @allure.label.microservice:WebObjects
 @allure.label.layer:selenium
 @testit.externalID("1001")
+@testit.namespace("SpecFlow_Test_v2.Actions")
+@testit.class("Класс 1")
 Сценарий: Добавление объекта
 	Когда условие false
 	Тогда объект работает
