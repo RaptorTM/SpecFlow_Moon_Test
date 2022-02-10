@@ -14,7 +14,7 @@ variables:
 
 stages:
   - run-nunit
-  - allure-report
+  - testit-allure-report
 
 run-nunit:
     stage: run-nunit
@@ -30,7 +30,7 @@ run-nunit:
     allow_failure: true
 
 run-testit-allure-adaptor:
-    stage: allure-report
+    stage: testit-allure-report
     image: python:3.7-alpine3.15
     script:
         - pip install testit-allure-adaptor
