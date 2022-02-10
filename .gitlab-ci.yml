@@ -20,17 +20,17 @@ run-nunit:
     stage: run-nunit
     
     script:
-        - FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
+#        - FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim
 
-        - RUN echo 'pull down choco'
-        - RUN powershell -Command Install-PackageProvider -name chocolatey -Force
-        - RUN powershell -Command Set-PackageSource -Name chocolatey -Trusted
+        - echo 'pull down choco'
+        - powershell -Command Install-PackageProvider -name chocolatey -Force
+        - powershell -Command Set-PackageSource -Name chocolatey -Trusted
 
-        - RUN powershell -Command Get-PackageSource
+        - powershell -Command Get-PackageSource
 
-        - RUN echo 'install chrome via choco'
-        - RUN powershell -Command Install-Package GoogleChrome -MinimumVersion 98
-        
+        - echo 'install chrome via choco'
+        - powershell -Command Install-Package GoogleChrome -MinimumVersion 98
+
         - dotnet restore
         - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
     artifacts:
