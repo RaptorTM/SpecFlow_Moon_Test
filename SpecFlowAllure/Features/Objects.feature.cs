@@ -561,21 +561,19 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Изменение полей профиля")]
+        [NUnit.Framework.DescriptionAttribute("Поиск расчета с помощью строки поиска")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
-        [NUnit.Framework.CategoryAttribute("story:Профиль_пользователя")]
+        [NUnit.Framework.CategoryAttribute("story:\"Поиск\"")]
         [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
-        [NUnit.Framework.CategoryAttribute("allure.label.layer:selenium")]
-        public virtual void ИзменениеПолейПрофиля()
+        public virtual void ПоискРасчетаСПомощьюСтрокиПоиска()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
-                    "story:Профиль_пользователя",
-                    "allure.label.microservice:WebCatalog",
-                    "allure.label.layer:selenium"};
+                    "story:\"Поиск\"",
+                    "allure.label.microservice:WebCatalog"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Изменение полей профиля", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 92
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Поиск расчета с помощью строки поиска", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 99
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -595,11 +593,11 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 93
+#line 100
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 94
- testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+#line 101
+ testRunner.Then("объект не работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -85,17 +85,17 @@
 	Когда условие true
 	Тогда объект работает
 
-#@layer:web
-#@story:Профиль_пользователя
-#@allure.label.microservice:WebCatalog
-#@allure.label.layer:selenium
-#Сценарий: Изменение полей профиля
-#	Когда условие true
-#	Тогда объект работает
-
 @layer:web
-@story:"Поиск"
+@story:Профиль_пользователя
 @allure.label.microservice:WebCatalog
-Сценарий: Поиск расчета с помощью строки поиска
+@allure.label.layer:selenium
+Сценарий: Изменение полей профиля
 	Когда условие true
-	Тогда объект не работает
+	Тогда объект работает
+
+#@layer:web
+#@story:"Поиск"
+#@allure.label.microservice:WebCatalog
+#Сценарий: Поиск расчета с помощью строки поиска
+#	Когда условие true
+#	Тогда объект не работает
