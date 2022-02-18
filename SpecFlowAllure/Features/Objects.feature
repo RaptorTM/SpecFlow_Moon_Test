@@ -1,5 +1,14 @@
 Функция: Функциональная проверка
 
+@layer:web
+@allure.label.story:ПроверкаSelenium
+@allure.label.microservice:WebObjects
+@allure.label.layer:selenium
+Сценарий: Открываем google и переходим на mailru
+	Если откроем google
+	Тогда перейдём на mailru
+	Затем Пощёлкаем вкладки
+	И Закроем браузер
 
 @layer:web
 @allure.label.story:Объекты

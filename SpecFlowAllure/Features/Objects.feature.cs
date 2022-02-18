@@ -74,21 +74,21 @@ namespace SpecFlowAllure.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Вход в объекты")]
+        [NUnit.Framework.DescriptionAttribute("Открываем google и переходим на mailru")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
-        [NUnit.Framework.CategoryAttribute("allure.label.story:Объекты")]
+        [NUnit.Framework.CategoryAttribute("allure.label.story:ПроверкаSelenium")]
         [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebObjects")]
         [NUnit.Framework.CategoryAttribute("allure.label.layer:selenium")]
-        public virtual void ВходВОбъекты()
+        public virtual void ОткрываемGoogleИПереходимНаMailru()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
-                    "allure.label.story:Объекты",
+                    "allure.label.story:ПроверкаSelenium",
                     "allure.label.microservice:WebObjects",
                     "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Вход в объекты", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 8
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Открываем google и переходим на mailru", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -108,10 +108,61 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 8
+ testRunner.When("откроем google", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Если ");
+#line hidden
 #line 9
- testRunner.When("условие false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
+ testRunner.Then("перейдём на mailru", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
 #line 10
+ testRunner.Then("Пощёлкаем вкладки", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Затем ");
+#line hidden
+#line 11
+ testRunner.And("Закроем браузер", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Вход в объекты")]
+        [NUnit.Framework.CategoryAttribute("layer:web")]
+        [NUnit.Framework.CategoryAttribute("allure.label.story:Объекты")]
+        [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebObjects")]
+        [NUnit.Framework.CategoryAttribute("allure.label.layer:selenium")]
+        public virtual void ВходВОбъекты()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "layer:web",
+                    "allure.label.story:Объекты",
+                    "allure.label.microservice:WebObjects",
+                    "allure.label.layer:selenium"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Вход в объекты", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 17
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 18
+ testRunner.When("условие false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
+#line hidden
+#line 19
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -133,7 +184,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Добавление объекта", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 16
+#line 25
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -153,10 +204,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 17
+#line 26
  testRunner.When("условие false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 18
+#line 27
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -178,7 +229,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Изменение объекта", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 24
+#line 33
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -198,10 +249,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 25
+#line 34
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 26
+#line 35
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -221,7 +272,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.microservice:WebObjects"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление объекта", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 31
+#line 40
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -241,10 +292,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 32
+#line 41
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 33
+#line 42
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -264,7 +315,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.microservice:WebCalculations"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Проверка рассчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 38
+#line 47
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -284,10 +335,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 39
+#line 48
  testRunner.When("условие false", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 40
+#line 49
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -307,7 +358,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.microservice:WebObjects"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Добавление расчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 45
+#line 54
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -327,10 +378,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 46
+#line 55
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 47
+#line 56
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -350,7 +401,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.microservice:WebCalculations"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление рассчета", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 52
+#line 61
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -370,10 +421,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 53
+#line 62
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 54
+#line 63
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -395,7 +446,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Проверка справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 60
+#line 69
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -415,10 +466,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 61
+#line 70
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 62
+#line 71
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -440,7 +491,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Создание справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 68
+#line 77
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -460,10 +511,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 69
+#line 78
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 70
+#line 79
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -485,7 +536,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Удаление справочника", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 76
+#line 85
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -505,10 +556,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 77
+#line 86
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 78
+#line 87
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -530,7 +581,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Просмотр профиля", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 84
+#line 93
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -550,10 +601,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 85
+#line 94
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 86
+#line 95
  testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
@@ -561,19 +612,21 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Поиск расчета с помощью строки поиска")]
+        [NUnit.Framework.DescriptionAttribute("Изменение полей профиля")]
         [NUnit.Framework.CategoryAttribute("layer:web")]
-        [NUnit.Framework.CategoryAttribute("story:\"Поиск\"")]
+        [NUnit.Framework.CategoryAttribute("story:Профиль_пользователя")]
         [NUnit.Framework.CategoryAttribute("allure.label.microservice:WebCatalog")]
-        public virtual void ПоискРасчетаСПомощьюСтрокиПоиска()
+        [NUnit.Framework.CategoryAttribute("allure.label.layer:selenium")]
+        public virtual void ИзменениеПолейПрофиля()
         {
             string[] tagsOfScenario = new string[] {
                     "layer:web",
-                    "story:\"Поиск\"",
-                    "allure.label.microservice:WebCatalog"};
+                    "story:Профиль_пользователя",
+                    "allure.label.microservice:WebCatalog",
+                    "allure.label.layer:selenium"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Поиск расчета с помощью строки поиска", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 99
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Изменение полей профиля", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 101
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -593,11 +646,11 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 100
+#line 102
  testRunner.When("условие true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
-#line 101
- testRunner.Then("объект не работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+#line 103
+ testRunner.Then("объект работает", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
             }
             this.ScenarioCleanup();
