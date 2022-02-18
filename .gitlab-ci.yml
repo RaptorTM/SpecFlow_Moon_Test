@@ -14,18 +14,30 @@ image: trikiller/linuxallure:v1
 
 stages:
   - run-nunit
+  - chromeStart
 
 run-nunit:
     stage: run-nunit
     
     script:
         - dotnet restore
-        - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
+        
     artifacts:
         when: always
         paths:
             - allure-results/        
     allow_failure: true
+
+run-chromeStart:
+    stage: chromeStart
+    image: selenium/standalone-chrome:98.0
+    script:
+        - dotnet run --project SpecFlowAllure/SpecFlowAllure.csproj
+    artifacts:
+        when: always
+        paths:
+            - allure-results
+    needs: ["run-nunit"]
 
 
 
