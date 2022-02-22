@@ -2,6 +2,8 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Drawing;
+using System.IO;
+using System.Reflection;
 using System.Threading;
 using TechTalk.SpecFlow;
 
@@ -24,9 +26,9 @@ namespace SpecFlowAllure
         [When(@"откроем google")]
         public void WhenОткроемGoogle()
         {
-
+            var browserDriverPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.AddArguments("--no-sandbox", "--headless", "--disable-gpu");
+            chromeOptions.AddArguments(browserDriverPath, "--no-sandbox", "--headless", "--disable-gpu");
             //            driver = (chromeOptions.);
             driver = new ChromeDriver(chromeOptions);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
